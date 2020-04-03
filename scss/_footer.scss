@@ -1,0 +1,36 @@
+.c-footer{
+  background-color: $Very-Light-Gray;
+  background-image: url('../images/bg-pattern-footer-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-top: 6rem;
+
+  @media ($desktop){
+    background-image: url('../images/bg-pattern-footer-desktop.svg');
+  }
+  &__heading{
+    padding-top: 5rem;
+    border-bottom: 1px solid 
+    $Dark-Grayish-Violet;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media ($desktop){
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__list{
+    text-align: center;
+    padding: 1rem 0;
+    @media ($tablet){
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+    @media ($desktop){
+      text-align: left;
+      grid-template-columns: repeat(4,1fr);
+    }
+  }
+}

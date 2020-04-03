@@ -1,0 +1,76 @@
+
+.c-intro{
+  color: white;
+  text-align: center;
+  padding: 5.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $Dark-Violet;
+  background-image: url('../images/bg-pattern-intro-left-mobile.svg');
+  background-position: 0 top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+  
+  &::after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    right: 0;
+    background-image: url('../images/bg-pattern-intro-right-mobile.svg');
+    background-position: bottom right;
+    height: 22rem;
+    background-repeat: no-repeat;
+    width: 8rem;
+  }
+  &__description{
+    line-height: 1.5;
+  }
+  &__hero{
+    display: none;
+  }
+  @media ($desktop){
+    background-image: none ;
+    text-align: left;
+    &::before{
+      content: '';
+      background-position: top right;
+      top: 0;
+      position: absolute;
+      right: 0;
+      height: 50rem;
+      width: 30rem;
+      background-repeat: no-repeat;
+      background-image: url('../images/bg-pattern-intro-right-desktop.svg');
+      z-index: 1; 
+    }
+    &::after{
+      background-image: url('../images/bg-pattern-intro-left-desktop.svg');
+      background-position: bottom left;
+      top: 50%;
+      left: 0;
+      height: 35rem;
+      width: 13rem;
+    }
+    &__content{
+      width: 50%;
+      z-index: 10;
+    }
+    &__hero{
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 0;
+      width: 45%;
+    }
+  }
+}
+.hero{
+  img{
+    width: 100%;
+  }
+  @media ($desktop){
+    display: none;
+  }
+}

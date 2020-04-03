@@ -1,0 +1,40 @@
+.features{
+  padding: 6rem 0;
+  @media ($desktop){
+    padding: 14rem 0 6rem 0;
+  }
+}
+.c-features{
+  margin-top: 4rem;
+  @media ($desktop){
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}
+.c-feature{
+  text-align: center;
+  &__icon{
+    margin: 3rem auto 2rem auto;
+  }
+  &__title{
+    font-family: $DM-Serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+
+  }
+  &__description{
+    line-height: 1.5;
+    font-weight: 400;
+    color: $Dark-Grayish-Violet;
+  }
+  @media ($desktop){
+    text-align: left;
+    &__icon{
+      margin: 3rem 0;
+    }
+  }
+
+}

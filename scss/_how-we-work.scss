@@ -1,0 +1,19 @@
+.c-how-we-work{
+  background-color: $Dark-Violet;
+  padding: 5rem 1rem;
+  color: white;
+  text-align: center;
+  background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  @media ($desktop){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
+    background-position: right top;
+    background-size: auto 100%; 
+  }
+}

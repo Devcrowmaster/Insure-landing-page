@@ -1,0 +1,47 @@
+.heading{
+  &--primary,&--secondary,&--tertiary{
+    font-family: $DM-Serif;
+    font-weight: 400;
+    margin: 0;
+  }
+  &--primary{
+    font-size: 2.8rem;
+    @media ($desktop){
+      font-size: 4.5rem;
+      &::before{
+        content: '';
+        width: 8rem;
+        display: block;
+        margin-bottom: 3rem;
+        height: .1rem;
+        background-color: $Dark-Grayish-Violet;
+      }
+    }
+  }
+  &--secondary{
+    text-align: center;
+    font-size: 2.5rem;
+    &::before{
+      content: '';
+      width: 8rem;
+      display: block;
+      margin: 1.5rem auto;
+      height: .1rem;
+      background-color: $Dark-Grayish-Violet;
+    }
+    @media ($desktop){
+      text-align: left;
+      font-size: 3.5rem;
+      &::before{
+        margin: 2rem 0;
+      }
+    }
+  }
+  &--tertiary{
+    font-size: 2.5rem;
+    @media ($desktop){
+      width: 48%;
+      font-size: 3.6rem;
+    }
+  }
+}

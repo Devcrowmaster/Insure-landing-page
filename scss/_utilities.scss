@@ -1,0 +1,9 @@
+.u-mt-1{
+  margin-top: 1rem;
+}
+.u-mt-2{
+  margin-top: 2rem;
+  @media ($desktop){
+    margin-top: 0;
+  }
+}

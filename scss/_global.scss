@@ -1,0 +1,37 @@
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+body{
+  font-family: $Karla;
+}
+header{
+  display: grid;
+  align-items: center;
+  height: 10vh;
+  align-content: center;
+}
+
+
+.o-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  position: relative;
+  @media ($tablet){
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @media (min-width: 1200px){
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

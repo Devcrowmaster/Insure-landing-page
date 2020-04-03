@@ -1,0 +1,30 @@
+.c-btn{
+  padding: .7rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+  transition: all .3s;
+  
+  &--white{
+    color: white;
+    border: 1px solid white;
+    &:hover{
+      background-color: white;
+      color: $Dark-Violet;
+    }
+  }
+  &--link{
+    border: 1px solid white;
+    font-weight: 700;
+    &:hover{
+      background-color: white;
+    }
+    @media ($desktop){
+      border: 1px solid #000;
+      &:hover{
+        background-color: #000;
+      }
+    }
+  }
+}

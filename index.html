@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Frontend Mentor | Insure landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 16px; text-align: center; background-color: black; color: #fff; padding: 1rem 0;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+  <div class="o-container">
+    <header class="fixed">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg" alt="logo" class="">
+      </a>
+      <div class="icon open">
+        <img src="images/icon-hamburger.svg" alt="hamburger" class="icon__hamburger">
+        <img src="images/icon-close.svg" alt="close" class="icon__close">
+      </div>
+      <nav id="menu" class="navbar open">
+        <ul class="c-menu c-menu--main">
+          <li class="c-menu__item"><a class="c-menu__link" href="#">How we work</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Blog</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Account</a></li>
+          <li class="c-menu__item"><a class="c-menu__link c-btn c-btn--link" href="#">View plans</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div class="hero">
+    <picture>
+      <source media="(min-width: 768px)" srcset="images/image-intro-desktop.jpg">
+      <img src="images/image-intro-mobile.jpg" alt="hero">
+    </picture>
+  </div>
+
+  <div class="c-intro">
+    <div class="o-container">
+      <div class="c-intro__content">
+        <h1 class="heading--primary">Humanizing your insurance.</h1>
+        <p class="c-intro__description">
+          Get your life insurance coverage easier and faster. We blend our expertise
+          and technology to help you find the plan that’s right for you. Ensure you
+          and your loved ones are protected.
+        </p>
+        <div>
+          <a href="#" class="c-btn c-btn--white u-mt-1">View plans</a>
+        </div>
+      </div>
+      <img src="images/image-intro-desktop.jpg" alt="hero" class="c-intro__hero">
+    </div>
+  </div>
+
+  <section class="features">
+    <div class="o-container">
+      <h2 class="heading--secondary">We’re different</h2>
+      <div class="c-features">
+        <div class="c-feature">
+          <img class="c-feature__icon" src="images/icon-snappy-process.svg" alt="snappy process">
+          <h3 class="c-feature__title">Snappy Process</h3>
+          <p class="c-feature__description">
+            Our application process can be completed in minutes, not hours. Don’t get
+            stuck filling in tedious forms.
+          </p>
+        </div>
+        <div class="c-feature">
+          <img class="c-feature__icon" src="images/icon-affordable-prices.svg" alt="affordable prices">
+          <h3 class="c-feature__title">Affordable Prices</h3>
+          <p class="c-feature__description">
+            We don’t want you worrying about high monthly costs. Our prices may be low,
+            but we still offer the best coverage possible.
+          </p>
+        </div>
+        <div class="c-feature">
+          <img class="c-feature__icon" src="images/icon-people-first.svg" alt="people first">
+          <h3 class="c-feature__title">People First</h3>
+          <p class="c-feature__description">
+            Our plans aren’t full of conditions and clauses to prevent payouts. We make
+            sure you’re covered when you need it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="o-container">
+    <section class="c-how-we-work">
+      <h2 class="heading--tertiary">
+        Find out more about how we work
+      </h2>
+      <a href="#" class="c-btn c-btn--white u-mt-2">How we work</a>
+    </section>
+  </div>
+
+  <footer class="c-footer">
+    <div class="o-container">
+      <div class="c-footer__heading">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <nav>
+          <ul class="c-menu c-menu--social">
+            <li class="c-menu__item"><a class="c-menu__link" href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li class="c-menu__item"><a class="c-menu__link" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="c-menu__item"><a class="c-menu__link" href="#"><i class="fab fa-pinterest"></i></a></li>
+            <li class="c-menu__item"><a class="c-menu__link" href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="c-footer__list">
+        <ul class="c-menu c-menu--footer">
+          <h3 class="c-menu--footer__title">Our company</h3>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">How we work</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Why Insure?</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">View plans</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Reviews</a></li>
+        </ul>
+        <ul class="c-menu c-menu--footer">
+          <h3 class="c-menu--footer__title">Help me</h3>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">FAQ</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Terms of use</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Privacy policy</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Cookies</a></li>
+        </ul>
+        <ul class="c-menu c-menu--footer">
+          <h3 class="c-menu--footer__title">Contact</h3>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Sales</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Support</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Live chat</a></li>
+        </ul>
+        <ul class="c-menu c-menu--footer">
+          <h3 class="c-menu--footer__title">Others</h3>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Careers</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Press</a></li>
+          <li class="c-menu__item"><a class="c-menu__link" href="#">Licenses</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Devcrowmaster">Alexander</a>.
+  </div>
+</body>
+
+</html>
